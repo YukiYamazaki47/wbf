@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>List Example</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='wlist/css/index.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='wlist/css/lists.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='wlist/css/butten.css') }}">
+</head>
+<body>
+  <main>
+
+    <div>
+
+      <span>
+        <h2>List with Three Items per Row and One Border per Row (Parallel Items)</h2>
+      </span>
+
+      <span>
+        
+        <div class="dropdown">
+
+          <button class="dropdownb" onclick="toggleDropdown()">Order By</button>
+
+          <div class="dropdown-content">
+
+            <div>
+              <button class="drpdown" onclick="storbyname()">
+                <li class="dropdownli">
+                Name
+                </li>
+              </button>
+            </div>
+
+            <div>
+              <button class="drpdown">
+                <li class="dropdownli">
+                Price Low
+                </li>
+              </button>
+            </div>
+
+            <div>
+              <button class="drpdown">
+                <li class="dropdownli">
+                Price High
+                </li>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+        </div>
+    
+      </span>
+
+    </div>
+    
+    <div id="slist" class="slistb">
+      
+
+      <div class="slisto">
+
+        <a class="slisti" href="http://127.0.0.1:5000/">
+
+          <li  id="slist_001" class="slistiip1">
+
+            <span>test</span>
+            <span class="slistiip2">test2</span>
+    
+          </li>
+        
+        </a>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="{{ url_for('static', filename='wlist/js/index.js') }}"></script>
+  <script src="{{ url_for('static', filename='wlist/js/startup.js') }}"></script>
+  <script src="{{ url_for('static', filename='wlist/js/butten.js') }}"></script>
+  <script src="{{ url_for('static', filename='base/js/base.js') }}"></script>
+
+</body>
+</html>

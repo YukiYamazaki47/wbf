@@ -1,0 +1,26 @@
+
+.slisto {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+}
+
+.slisti {
+    display: flex;
+    border: 1px solid #000000 ; /* 1px solid black border */
+    padding: 10px; /* Optional padding for spacing */
+    list-style: none;
+    border-radius: 20px;
+    background-color:  #0077b6;
+    text-decoration: none; /* Remove the underline */
+    color: #ff3385 ; /* Use the default text color */
+}
+
+.slistiip1 {
+    position: relative;
+}
+
+.slistiip2{
+    position: absolute;
+    left: 65vw;
+}

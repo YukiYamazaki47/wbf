@@ -1,0 +1,39 @@
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-left: 77vw ;
+    color: #ff3385 ; /* Use the default text color */
+}
+
+.dropdownli{
+    color: #ff3385 ; /* Use the default text color */
+}
+
+.dropdownb{
+    border: none;
+    min-width: 150px;
+    color: #ff3385 ; /* Use the default text color */
+    background-color: #0077b6;
+}
+
+.drpdown {
+    display: flex;
+    background-color: #0077b6;
+    list-style: none;
+    min-width: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0077b6;
+    color: #ff3385 ; /* Use the default text color */
+    z-index: 1;
+}
+
+.dropdown.active .dropdown-content {
+    display: block;
+}
