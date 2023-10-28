@@ -16,7 +16,7 @@ def index()->str:
 @app.route('/wisch/<int:wid>',methods=['GET'])
 def wisch(wid:int)->str:
     if wid not in get_wisch_ids(): abort(404)
-    return "NO"
+    return render_template("/wisch/html/index.html")
 
 @app.route('/wlist/<wlist>',methods=['GET'])
 def wlist(wlist:str)->str:
